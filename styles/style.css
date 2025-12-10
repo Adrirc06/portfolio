@@ -2,3 +2,31 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color-header: #0881d1;
+    --text-color-header: #f9f9f9;
+    --header-current: 
+
+}
+
+header {
+    background-color: var(--bg-color-header);
+    padding: 3vh;
+}
+
+.nav-link, .navbar-brand {
+    color: var(--text-color-header);
+}
+
+.current {
+    color: #b1dcf8;
+    font-size: 1.2em;
+}
+
+.nav-item:hover {
+    transform: scale(1.2);
+}
+
+.nav-item {
+    padding-left: 1vw
+}
