@@ -9,7 +9,7 @@
 
 }
 
-header {
+header, footer{
     background-color: var(--bg-color-header);
     padding: 3vh;
 }
@@ -20,13 +20,30 @@ header {
 
 .current {
     color: #b1dcf8;
-    font-size: 1.2em;
 }
 
 .nav-item:hover {
     transform: scale(1.2);
+    transition: 1s;
+}
+
+.nav-link:hover {
+    color: #b1dcf8;
 }
 
 .nav-item {
     padding-left: 1vw
+}
+
+.navbar-brand:hover {
+    color: var(--text-color-header);
+}
+
+footer ul {
+    padding-bottom: 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: var(--text-color-header);
 }
