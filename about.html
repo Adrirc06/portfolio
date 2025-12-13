@@ -6,19 +6,26 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Inicio</title>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Sobre mí</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container justify-content-between">
                 <p class="navbar-brand">Adrián Rosa Cuerva</p>
+                <a class="hamburguer" data-bs-toggle="offcanvas" href="#menuResponsive">
+                    <img src="img/hamburguer.png" alt="Menú hamburguesa">
+                </a>
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link current" aria-readonly="true">Sobre mí</a>
+                        <a href="about.html" class="nav-link current">Sobre mí</a>
                     </li>
                     <li class="nav-item">
                         <a href="portfolio.html" class="nav-link">Proyectos</a>
@@ -31,6 +38,33 @@
                     </li>
                 </ul>
             </div>
+            <div class="offcanvas offcanvas-start" id="menuResponsive">
+                <div id="offcanvas-header">
+                    <p class="h3">
+                        Menú
+                    </p>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="align-items-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link current">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main></main>
     <footer class="py-3 fixed-bottom">

@@ -1,17 +1,30 @@
 * {
     box-sizing: border-box;
+    font-family: "Geom", sans-serif;
 }
 
 :root {
     --bg-color-header: #0881d1;
     --text-color-header: #f9f9f9;
-    --header-current: 
-
 }
 
 header, footer{
     background-color: var(--bg-color-header);
     padding: 3vh;
+}
+
+.hamburguer {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: none;
+}
+
+.hamburguer img {
+    height: 1.5em;
+    width: 1.5em;
+    display: block;
 }
 
 .nav-link, .navbar-brand {
@@ -39,6 +52,38 @@ header, footer{
     color: var(--text-color-header);
 }
 
+.offcanvas {
+    background-color: var(--bg-color-header);
+    color: var(--text-color-header);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#offcanvas-header {
+    padding: 15px;
+    text-align: center;
+}
+
+.offcanvas ul {
+    padding: 0;
+}
+
+.offcanvas li {
+    text-align: center;
+    list-style-type: none;
+    border-bottom: 2px solid white;
+    padding: 0.5em;
+}
+
+.offcanvas li:hover {
+    transform: none;
+}
+
+.offcanvas li:last-child {
+    border: none;
+}
+
 footer ul {
     padding-bottom: 10px;
 }
@@ -46,4 +91,18 @@ footer ul {
 footer p {
     margin-top: 10px;
     color: var(--text-color-header);
+}
+
+/*MEDIA QUERY*/
+
+@media (max-width: 1000px) {
+
+    .hamburguer{
+        display: block;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
 }
