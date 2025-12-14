@@ -58,31 +58,47 @@ header, footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 #offcanvas-header {
-    padding: 15px;
+    padding: 2em;
     text-align: center;
+}
+
+.offcanvas button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 2em;
 }
 
 .offcanvas ul {
     padding: 0;
 }
 
-.offcanvas li {
+.offcanvas-body li {
     text-align: center;
     list-style-type: none;
     border-bottom: 2px solid white;
     padding: 0.5em;
 }
 
-.offcanvas li:hover {
+.offcanvas-body li:hover {
     transform: none;
 }
 
-.offcanvas li:last-child {
+.offcanvas-body li:last-child {
     border: none;
 }
+
+.offcanvas-footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    }
 
 footer ul {
     padding-bottom: 10px;
@@ -91,6 +107,10 @@ footer ul {
 footer p {
     margin-top: 10px;
     color: var(--text-color-header);
+}
+
+.logo-social {
+    height: 3em;
 }
 
 /*MEDIA QUERY*/
