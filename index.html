@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -85,8 +85,8 @@
         </nav>
     </header>
     <section id="inicio" data-aos="fade-right" class="mt-3">
-        <div class="container-fluid my-5">
-            <div class="row p-4 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="container-fluid my-5 bg-lighter" id="hero">
+            <div class="row p-4 pt-lg-5 align-items-center rounded-3 border shadow-lg border-0">
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 text-center">
                 <h1 class="display-4 fw-bold lh-1">Adrián Rosa Cuerva</h1>
                 <p class="lead">
@@ -94,8 +94,7 @@
                     Técnico Superior en Desarrollo de Aplicaciones Web
                 </p>
             </div>
-            <img class="col-lg-4 rounded-circle" src="img/placeholder.png" alt="">
-            </div>
+            <img class="col-md-3 rounded-circle profile" src="img/perfil.png" alt="">
         </div>
     </section>
     <section id="about" data-aos="fade-right" class="mt-3">
@@ -112,19 +111,19 @@
                     <p class="h3 mb3">Habilidades</p>
                     <p class="h5 mt-1">Java</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
                     </div>
                     <p class="h5 mt-1">JavaScript</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
                     </div>
                     <p class="h5 mt-1">HTML/CSS</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
                     </div>
                     <p class="h5 mt-1">Git</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
                     </div>
                 </div>
             </div>
@@ -135,45 +134,39 @@
         <div class="container justify-content-center align-items-center">
             <div class="row row-cols-md-3" data-aos="fade-right" data-aos-duration="2000">
                 <div class="col justify-content-center">
-                    <div class="card m-2" style="width: 18rem;">
+                    <div class="card m-2 bg-lighter" style="width: 18rem;">
                         <img src="img/logo-aurelia.png" class="card-img-top" alt="Logo de Aurel.IA">
                         <div class="card-body">
                             <h5 class="card-title">Aurel.IA</h5>
                             <p class="card-text">Un chatbot para asistir a los trabajadores del campo.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Enero de 2024</li>
-                        </ul>
+                        <p class="ms-3">Enero de 2024</p>
                         <div class="card-body">
                             <a href="#" class="card-link">Ir al proyecto</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card m-2" style="width: 18rem;" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="card m-2 bg-lighter" style="width: 18rem;" data-aos="fade-right" data-aos-duration="2000">
                         <img src="img/logo-enigma.png" class="card-img-top" alt="Logo del Enigma del Bosque">
                         <div class="card-body">
                             <h5 class="card-title">El Enigma del Bosque</h5>
                             <p class="card-text">Un mod para la versión 1.20.1 de Minecraft que añade un nuevo bioma, una nueva entidad y un nuevo mineral para intercambiar con la nueva entidad.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Marzo a Junio de 2024</li>
-                        </ul>
+                        <p class="ms-3">Marzo a Junio de 2024</p>
                         <div class="card-body">
                             <a href="https://github.com/Adrirc06/ForestEnigma_1.20" target="_blank" class="card-link">Ir al proyecto</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card m-2" style="width: 18rem;" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="card m-2 bg-lighter" style="width: 18rem;" data-aos="fade-right" data-aos-duration="2000">
                         <img src="img/logo-hispania.jpg" class="card-img-top" alt="Logo del Proyecto Hispaina">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto Hispania</h5>
                             <p class="card-text">Videojuego ambientado en la Península Ibérica en la época medieval que no llegó a ver la luz.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">2024</li>
-                        </ul>
+                        <p class="ms-3">2024</p>
                         <div class="card-body">
                             <a href="https://x.com/ensignjoker/status/1846716018023919795" class="card-link">Ir al anuncio</a>
                         </div>
@@ -184,24 +177,24 @@
     </section>
     <section id="services" data-aos="fade-right" class="mt-3">
         <p class="h2 text-center">Servicios</p>
-        <div id="servicesCarousel" class="carousel slide container" data-bs-ride="carousel">
+        <div id="servicesCarousel" class="carousel slide container" data-bs-ride="carousel" data-aos="fade-right" data-aos-duration="2000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner p-5 bg-light rounded shadow-lg"> 
-                <div class="carousel-item active text-center">
+            <div class="carousel-inner p-5 bg-lighter rounded shadow-lg "> 
+                <div class="carousel-item active text-center ">
                     <i class="fa-solid fa-layer-group fa-2xl mb-4 text-muted"></i>
                     <h3 class="fw-bold">Desarrollo Web</h3>
                     <p class="lead">Desarrollo Full Stack de aplicaciones web</p>
                 </div>
-                <div class="carousel-item text-center">
+                <div class="carousel-item text-center ">
                     <i class="fa-brands fa-git-alt fa-2xl mb-4 text-muted"></i>
                     <h3 class="fw-bold">Gestión de repositorios</h3>
                     <p class="lead">A través de Git y GitHub</p>
                 </div>
-                <div class="carousel-item text-center">
+                <div class="carousel-item text-center ">
                     <i class="fa-brands fa-windows fa-2xl mb-4 text-muted"></i>
                     <h3 class="fw-bold">Instalación de Sistemas Operativos</h3>
                     <p class="lead">Windows y diferentes distribuciones de Linux</p>
@@ -224,27 +217,27 @@
                 <div class="row" id="row1">
                     <div class="col" data-aos="fade-right" data-aos-duration="2000">
                         <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" required>
+                        <input type="text" class="form-control input-bg" id="nombre" required>
                     </div>
                     <div class="col" data-aos="fade-right" data-aos-duration="2000">
                         <label for="apellido" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" required>
+                        <input type="text" class="form-control input-bg" id="apellido" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col" data-aos="fade-right" data-aos-duration="2000">
                         <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control input-bg" id="email" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col" data-aos="fade-right" data-aos-duration="2000">
                         <label for="validationTextarea" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="validationTextarea" rows="5" required></textarea>
+                        <textarea class="form-control input-bg" id="validationTextarea" rows="5" required></textarea>
                     </div>
                 </div>
-                <div id="form-submit" class="row w-25 pt-3 justify-content-end" data-aos="fade-right" data-aos-duration="2000">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
+                <div class="row w-25 pt-3 justify-content-end" data-aos="fade-right" data-aos-duration="2000">
+                    <button id="form-submit"  class="btn btn-primary" type="submit">Enviar</button>
                 </div>
             </form>
         </div>
