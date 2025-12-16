@@ -145,3 +145,14 @@ footer p {
     }
 
 }
+
+@media (max-width: 750px) {
+        
+    #row1 {
+        flex-direction: column;
+    }
+
+    #form-submit {
+        width: 95% !important;
+    }
+}

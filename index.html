@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/correcionMenu.js"></script>
     <title>Inicio</title>
 </head>
 <body>
@@ -167,7 +168,7 @@
                     <div class="card m-2" style="width: 18rem;" data-aos="fade-right" data-aos-duration="2000">
                         <img src="img/logo-hispania.jpg" class="card-img-top" alt="Logo del Proyecto Hispaina">
                         <div class="card-body">
-                            <h5 class="card-title">Proyecto Hispaina</h5>
+                            <h5 class="card-title">Proyecto Hispania</h5>
                             <p class="card-text">Videojuego ambientado en la Península Ibérica en la época medieval que no llegó a ver la luz.</p>
                         </div>
                         <ul class="list-group list-group-flush">
@@ -181,9 +182,9 @@
             </div>
         </div>
     </section>
-    <section id="services"  data-aos="fade-right" class="mt-3">
+    <section id="services" data-aos="fade-right" class="mt-3">
         <p class="h2 text-center">Servicios</p>
-        <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="servicesCarousel" class="carousel slide container" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -191,17 +192,17 @@
             </div>
             <div class="carousel-inner p-5 bg-light rounded shadow-lg"> 
                 <div class="carousel-item active text-center">
-                    <i class="fa-solid fa-layer-group fa-2xl mb-4"></i>
+                    <i class="fa-solid fa-layer-group fa-2xl mb-4 text-muted"></i>
                     <h3 class="fw-bold">Desarrollo Web</h3>
                     <p class="lead">Desarrollo Full Stack de aplicaciones web</p>
                 </div>
                 <div class="carousel-item text-center">
-                    <i class="fa-brands fa-git-alt fa-2xl mb-4"></i>
+                    <i class="fa-brands fa-git-alt fa-2xl mb-4 text-muted"></i>
                     <h3 class="fw-bold">Gestión de repositorios</h3>
                     <p class="lead">A través de Git y GitHub</p>
                 </div>
                 <div class="carousel-item text-center">
-                    <i class="fa-brands fa-windows fa-2xl mb-4"></i>
+                    <i class="fa-brands fa-windows fa-2xl mb-4 text-muted"></i>
                     <h3 class="fw-bold">Instalación de Sistemas Operativos</h3>
                     <p class="lead">Windows y diferentes distribuciones de Linux</p>
                 </div>
@@ -216,9 +217,37 @@
             </button>
         </div>
     </section>
-    <section id="contact" data-aos="fade-right" class="mt-3">
+    <section id="contact" data-aos="fade-right" class="my-3">
         <p class="h2 text-center">Contacto</p>
-
+        <div class="container justify-content-center mt-4">
+            <form class="row g-3 container justify-content-center" action="#">
+                <div class="row" id="row1">
+                    <div class="col" data-aos="fade-right" data-aos-duration="2000">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="col" data-aos="fade-right" data-aos-duration="2000">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" data-aos="fade-right" data-aos-duration="2000">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" data-aos="fade-right" data-aos-duration="2000">
+                        <label for="validationTextarea" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="validationTextarea" rows="5" required></textarea>
+                    </div>
+                </div>
+                <div id="form-submit" class="row w-25 pt-3 justify-content-end" data-aos="fade-right" data-aos-duration="2000">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
     </section>
     <footer class="py-3">
         <div class="container">
@@ -239,47 +268,5 @@
 </body>
 <script>
   AOS.init();
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const myOffcanvas = document.getElementById('menuResponsive');
-    const bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
-    const navLinks = myOffcanvas.querySelectorAll('.offcanvas-body .nav-link');
-    
-    let pendingHash = null;
-
-    // 1. Capturamos el clic en el enlace
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            const href = this.getAttribute('href');
-            
-            // Si el enlace es un ancla interna
-            if (href.startsWith('#')) {
-                e.preventDefault(); // Evitamos el salto inmediato
-                pendingHash = href; // Guardamos el destino
-                
-                // Cerramos el menú
-                const instance = bootstrap.Offcanvas.getInstance(myOffcanvas);
-                instance.hide();
-            }
-        });
-    });
-
-    // 2. Cuando el menú termine de cerrarse REALMENTE, nos desplazamos
-    myOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
-        if (pendingHash) {
-            const targetElement = document.querySelector(pendingHash);
-            if (targetElement) {
-                // Calculamos la posición y hacemos scroll manual
-                const topOffset = targetElement.offsetTop;
-                window.scrollTo({
-                    top: topOffset,
-                    behavior: 'smooth'
-                });
-            }
-            pendingHash = null; // Limpiamos para el siguiente clic
-        }
-    });
-});
 </script>
 </html>
