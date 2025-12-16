@@ -23,12 +23,6 @@ header, footer{
     display: none;
 }
 
-.hamburguer img {
-    height: 1.5em;
-    width: 1.5em;
-    display: block;
-}
-
 .nav-link, .navbar-brand {
     color: var(--text-color-header);
 }
@@ -120,7 +114,7 @@ footer p {
 }
 
 .logo-social {
-    height: 3em;
+    width: 3em;
 }
 
 /*MEDIA QUERY*/
