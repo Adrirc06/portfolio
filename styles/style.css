@@ -9,6 +9,10 @@
     --nav-link-hover: #b1dcf8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header, footer{
     background-color: var(--bg-color-header);
     padding: 3vh;
@@ -102,6 +106,13 @@ header, footer{
     filter: invert(10%) sepia(10%) saturate(100%) hue-rotate(0deg) brightness(20%) contrast(100%);
     width: 3rem;
     height: 3rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--bg-color-header);
+}
+.carousel-indicators .active {
+    background-color: var(--nav-link-hover);
 }
 
 footer ul {
