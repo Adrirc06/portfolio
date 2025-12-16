@@ -6,11 +6,13 @@
 :root {
     --bg-color-header: #0881d1;
     --text-color-header: #f9f9f9;
+    --nav-link-hover: #b1dcf8;
 }
 
 header, footer{
     background-color: var(--bg-color-header);
     padding: 3vh;
+    
 }
 
 .hamburguer {
@@ -31,17 +33,13 @@ header, footer{
     color: var(--text-color-header);
 }
 
-.current {
-    color: #b1dcf8;
-}
-
 .nav-item:hover {
     transform: scale(1.2);
     transition: 1s;
 }
 
 .nav-link:hover {
-    color: #b1dcf8;
+    color: var(--nav-link-hover);
 }
 
 .nav-item {
@@ -98,7 +96,7 @@ header, footer{
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    }
+}
 
 footer ul {
     padding-bottom: 10px;
@@ -123,6 +121,10 @@ footer p {
 
     .navbar-nav {
         display: none;
+    }
+
+    #about .row {
+        flex-direction: column;
     }
 
 }

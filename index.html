@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <title>Inicio</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg">
             <div class="container justify-content-between">
                 <p class="navbar-brand">Adrián Rosa Cuerva</p>
                 <a class="hamburguer" data-bs-toggle="offcanvas" href="#menuResponsive">
@@ -22,19 +24,19 @@
                 </a>
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Inicio</a>
+                        <a href="#inicio" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">Sobre mí</a>
+                        <a href="#about" class="nav-link">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a href="portfolio.html" class="nav-link">Proyectos</a>
+                        <a href="#portfolio" class="nav-link">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="services.html" class="nav-link">Servicios</a>
+                        <a href="#services" class="nav-link">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contacto</a>
+                        <a href="#contact" class="nav-link">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -48,26 +50,26 @@
                 <div class="offcanvas-body">
                     <ul class="align-items-center">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link current">Inicio</a>
+                            <a href="#inicio" class="nav-link current" data-bs-dismiss="offcanvas">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="nav-link">Sobre mí</a>
+                            <a href="#about" class="nav-link" data-bs-dismiss="offcanvas">Sobre mí</a>
                         </li>
                         <li class="nav-item">
-                            <a href="portfolio.html" class="nav-link">Proyectos</a>
+                            <a href="#portfolio" class="nav-link" data-bs-dismiss="offcanvas">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="services.html" class="nav-link">Servicios</a>
+                            <a href="#services" class="nav-link" data-bs-dismiss="offcanvas">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Contacto</a>
+                            <a href="#contact" class="nav-link" data-bs-dismiss="offcanvas">Contacto</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <ul class="offcanvas-footer justify-content-around border-bottom flex-row">
                         <li class="nav-item">
-                            <a href="https://github.com/" target="_blank" class="nav-link"><img src="img/icons8-github-logo-96.png" class="logo-social" alt="Enlace a GitHub"></a>
+                            <a href="https://github.com/Adrirc06" target="_blank" class="nav-link"><img src="img/icons8-github-logo-96.png" class="logo-social" alt="Enlace a GitHub"></a>
                         </li>
                         <li class="nav-item">
                             <a href="https://www.instagram.com/" target="_blank" class="nav-link"><img src="img/icons8-instagram-96.png" class="logo-social" alt="Enlace a Instagram"></a>
@@ -80,7 +82,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <section id="inicio" data-aos="fade-right" class="mt-3">
         <div class="container-fluid my-5">
             <div class="row p-4 pt-lg-5 align-items-center rounded-3 border shadow-lg">
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 text-center">
@@ -93,12 +95,69 @@
             <img class="col-lg-4 rounded-circle" src="img/placeholder.png" alt="">
             </div>
         </div>
-    </main>
+    </section>
+    <section id="about" data-aos="fade-right" class="mt-3">
+        <p class="h2 text-center">Sobre mí</p>
+        <div class="container text-center h-100" data-aos="fade-right" data-aos-duration="1500">
+            <div class="row">
+                <div class="col">
+                    <p class="h3 mb-3">Experiencia</p>
+                    <p>Durante mis cuatro años de formación, he tocado diferentes temas, desde montaje y mantenimiento de equipos hasta desarrollo web.</p>
+                    <p>He trabajado con lenguajes de programación y maquetación, tales como Java, JavaScript, PHP, HTML y CSS, y frameworks como Angular y Bootstrap.</p>
+                    <p>También he utilizado diferentes herramientas y servicios útiles para el desarrollo web, como Git, GitHub, Docker y Amazon Web Services.</p>
+                </div>
+                <div class="col">
+                    <p class="h3 mb3">Habilidades</p>
+                    <p class="h5 mt-1">Java</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
+                    </div>
+                    <p class="h5 mt-1">JavaScript</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                    </div>
+                    <p class="h5 mt-1">HTML/CSS</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
+                    </div>
+                    <p class="h5 mt-1">Git</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" data-aos="fade-right" class="mt-3">
+        <p class="h2 text-center">Mis Proyectos</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="py-3">
         <div class="container">
             <ul class="navbar-nav justify-content-around border-bottom flex-row">
                 <li class="nav-item">
-                    <a href="https://github.com/" target="_blank" class="nav-link"><img src="img/icons8-github-logo-96.png" class="logo-social" alt="Enlace a GitHub"></a>
+                    <a href="https://github.com/Adrirc06" target="_blank" class="nav-link"><img src="img/icons8-github-logo-96.png" class="logo-social" alt="Enlace a GitHub"></a>
                 </li>
                 <li class="nav-item">
                     <a href="https://www.instagram.com/" target="_blank" class="nav-link"><img src="img/icons8-instagram-96.png" class="logo-social" alt="Enlace a Instagram"></a>
@@ -111,4 +170,7 @@
         </div>
     </footer>
 </body>
+<script>
+  AOS.init();
+</script>
 </html>
