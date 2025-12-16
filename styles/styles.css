@@ -189,7 +189,7 @@ footer p {
         flex-direction: column;
     }
 
-    #form-submit {
+    #form-submit-div {
         width: 95% !important;
     }
 }
