@@ -98,6 +98,18 @@ header, footer{
     list-style: none;
 }
 
+#portfolio .col {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(10%) sepia(10%) saturate(100%) hue-rotate(0deg) brightness(20%) contrast(100%);
+    width: 3rem;
+    height: 3rem;
+}
+
 footer ul {
     padding-bottom: 10px;
 }
